@@ -1,1 +1,88 @@
+# Online Retail Sales Dashboard (Power BI)
 
+An interactive **Power BI dashboard** built to analyze transactional sales data from a UK-based online retail store. The report — titled **"TATA Online Retail Data Set"** on the dashboard itself — visualizes revenue trends, country-wise performance, and customer activity from over 540,000 invoice line items spanning a full year of sales.
+
+## 📖 About the Project
+
+This project takes a raw e-commerce transaction dataset and turns it into a single, focused Power BI report page that highlights key sales patterns at a glance. The dataset captures real invoice-level transactions — including order details, product descriptions, quantities, prices, customer IDs, and countries — from **December 2010 to December 2011**.
+
+The dashboard was built to answer a few core business questions:
+- How is revenue trending month over month?
+- Which countries generate the most sales?
+- How active are customers, and how does that relate to revenue?
+- Where in the world are orders coming from?
+
+## 📊 Dataset Overview
+
+| Detail | Value |
+|---|---|
+| Source file | `Online_Retail.xlsx` |
+| Total rows | 541,909 transaction line items |
+| Date range | December 1, 2010 – December 9, 2011 |
+| Unique customers | 4,372 |
+| Unique products | 4,070 |
+| Countries represented | 38 |
+| Primary market | United Kingdom (~91% of orders) |
+
+**Columns in the dataset:**
+- `InvoiceNo` — Unique invoice/order number
+- `StockCode` — Product/item code
+- `Description` — Product name
+- `Quantity` — Units purchased per line item
+- `InvoiceDate` — Date and time of the transaction
+- `UnitPrice` — Price per unit
+- `CustomerID` — Unique customer identifier
+- `Country` — Customer's country
+
+> Note: Some rows have a missing `CustomerID` (guest/unregistered orders), and a small number of rows have negative quantities, which typically represent cancelled orders or returns.
+
+## 📈 Dashboard Contents
+
+The Power BI report (`TATA.pbix`) consists of a single report page with the following visuals:
+
+- **Revenue Trend (Line Chart)** — Monthly revenue plotted over the order date's Date Hierarchy, showing how sales performed across the year.
+- **Year Slicer** — An interactive filter allowing the report to be sliced by year for focused analysis.
+- **Revenue by Country (Bar Chart)** — A clustered bar chart comparing revenue across countries, with order quantity shown in tooltips.
+- **Customer Activity vs. Revenue (Bar Chart)** — A clustered bar chart relating customer counts to revenue figures.
+- **Country Map (Filled Map)** — A geographic visualization showing average order quantity by country.
+- **Title Banner** — A textbox header labeling the report.
+
+All visuals are connected to a single data table (**"Online Retail"**) loaded from the Excel source, making the report fully interactive — filtering on the year slicer or clicking into a country updates every visual on the page.
+
+## 🛠️ Built With
+
+- **Microsoft Power BI Desktop** — report building, data modeling, and visualization
+- **Microsoft Excel** — source data format (`.xlsx`)
+
+## 📁 Files
+
+- `TATA.pbix` — The Power BI report file (includes the data model and report visuals)
+- `Online_Retail.xlsx` — The source dataset used to build the report
+
+## 🚀 How to Open
+
+1. Install **Power BI Desktop** (free, available from Microsoft)
+2. Open `TATA.pbix` directly — the dataset is already embedded in the file's internal data model, so no separate data connection setup is required
+3. Use the year slicer and visual interactions to explore the data
+
+## 🎯 Project Goals
+
+- Practice transforming raw transactional data into a clear, business-relevant dashboard
+- Build experience with Power BI's core visual types: line charts, bar charts, slicers, and maps
+- Explore sales trends, geographic distribution, and customer activity from a real-world style dataset
+- Strengthen data modeling and report design skills using Power BI Desktop
+
+## 📬 Contact
+
+**Johit Kumar**
+- 📧 Email: johitkumarjha@gmail.com
+- 📍 Location: Jaipur, Rajasthan
+- 📞 Phone: +91 8581902314
+
+## 📄 License
+
+This project uses a publicly available e-commerce transaction dataset for educational and portfolio purposes.
+
+---
+
+© 2026 Johit Kumar
